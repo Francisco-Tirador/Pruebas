@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -13,7 +13,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
+} */
 
 a {
   font-weight: 500;
@@ -24,13 +24,13 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+/* body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
+} */
 
 h1 {
   font-size: 3.2em;
@@ -68,3 +68,45 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* @media (max-width:970px){
+  .ContenRegister{
+    width: 100px;
+    display: inline;
+  }
+  .Registro{
+    overflow: hidden;
+    border-radius: 0px 40px 40px 0px;
+    animation: 1s 0.5s 1 forwards  linear MovImput;
+  }
+  @keyframes MovImput {
+    100%{transform: translateY(250px);}
+    
+  }
+  .Conten_campos img{
+    width: 300px;
+    height: 250px;
+  }
+  .login_list{
+    display: initial;
+    }
+    .editedImput{
+      width: 200px;
+      text-align: center;
+      margin: 10px ;
+      height: 10px;
+      position: relative;
+      border:0px rgb(243, 0, 247) solid;
+      border-bottom:2px rgb(59, 121, 255) solid;
+      background-color: rgba(235, 213, 255, 0);
+    }
+    .Registro{
+      overflow: hidden;
+      padding:  0px;
+      background-color: rgb(255, 255, 255);
+      top: 0px;
+      height: 400px;
+    position: absolute;
+      border-radius: 0px 0px 40px 40px;
+      animation: 1s 0.5s 1 forwards  linear MovImput;
+    }
+  } */
