@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import banner from './assets/cpt1.png'
+import banner from './assets/jhl.jfif'
 import './App.css'
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className='ContenRegister'>
         <div className='Conten_campos'>
-          <img src={banner} alt="" />
+          <img src="https://c4.wallpaperflare.com/wallpaper/232/461/291/billelis-dark-religion-death-skull-hd-wallpaper-preview.jpg" alt="" />
 
         </div>
         <div className='Registro'>
