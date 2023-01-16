@@ -190,7 +190,7 @@ function App() {
   <option value="DR." >ESTUDIANTE</option>
   <option value="DR." >PUBLICO EN GENERAL</option>
 
-  <option>(VACIO)</option>
+
 
 </select>
 
