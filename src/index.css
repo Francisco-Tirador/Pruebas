@@ -106,7 +106,7 @@ button:focus-visible {
     animation: 1s 0.5s 1 forwards  linear MovImput;
   }
   @keyframes MovImput {
-    100%{transform: translateY(240px);}
+    100%{transform: translateY(220px) scale(0.9);}
     
   }
   .Conten_campos img{
@@ -120,11 +120,14 @@ button:focus-visible {
       width: 240px;
       text-align: center;
       margin: 10px ;
-      height: 10px;
+      height: 15px;
       position: relative;
       background-color: rgba(235, 213, 255, 0);
+      font-weight: 700;
     }
     .Registro{
+      overflow-y:scroll ;
+      transform: scale(0.8);
       padding: 5px;
       background-color: rgb(255, 255, 255);
       top: 0px;
@@ -144,5 +147,30 @@ button:focus-visible {
       width: 60%;
       text-align: center;
     }
-  
+    .f2{
+      height: 100px;
+      width: 100px;
+      bottom: 10px;
+      right: 6px;
+    }
+  .f1{
+    height: 100px;
+    width: 100px;
+    bottom: -10px;
+    left: -6px;
+  }
+  @media(max-width:350px){
+    body{
+      height: 150vh;
+    }
+    .App{
+      transform: scale(0.8);
+    }
+    #root {
+      max-width: 1280px;
+      margin: 0;
+      padding: 0%;
+      text-align: center;
+  }
+  }
   }

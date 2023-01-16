@@ -63,13 +63,13 @@ body{
 .f1{
   transform: rotate(40deg);
   background-color: rgba(255, 86, 218, 0.174);
-  bottom: -150px;
-  left: -60px;
+  bottom: -250px;
+  left: -200px;
 }
 .f2{
-  transform: rotate(-30deg);
+  transform: rotate(30deg);
 background-color: rgba(58, 163, 255, 0.34);
-bottom: 0;
+bottom: -200px;
 left: 200px;
 }
 .Registro{
@@ -97,6 +97,8 @@ left: 200px;
   position: relative;
 }
 .editedImput{
+ 
+  font-weight: 700;
   width: 200px;
   text-align: center;
   margin: 10px ;
@@ -189,4 +191,9 @@ animation: 20s infinite alternate linear movCirculo;
 70%{transform: translate(100px, 210px);}
 80%{transform: translate(150px, 310px);}
 100%{transform: translate(250px, 210px);}  
+}
+
+
+select{
+  margin: 0px;
 }
