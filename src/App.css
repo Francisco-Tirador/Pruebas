@@ -1,13 +1,17 @@
 #root {
-  
+  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-/* .App{
-  background-color: #888;
-} */
+.App{
+  /* background-color: #888; */
+  /* height: 100vh; */
+  height:100%;
+  width: 100%;
+
+}
 ::placeholder{
   color: rgb(12, 12, 12);
   font-weight: 700;
@@ -27,6 +31,7 @@ body{
   animation: 0.5s  1 forwards  linear movEntrada;
   opacity: 0%;
   display: flex;
+ 
 }
 
 @keyframes movEntrada {
@@ -41,6 +46,7 @@ body{
   z-index: 1000;
   position: relative;
   transition: 10s;
+
 }
 
 .Conten_campos img {
@@ -49,23 +55,30 @@ body{
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.701);
 }
 .fondo{
+  z-index: -10;
   position: absolute;
-  width: 300px;
-  height: 300px;
-  background-color: aqua;
+  width: 600px;
+  height: 400px;
 }
 .f1{
-  transform: rotate(0deg);
+  transform: rotate(40deg);
+  background-color: rgba(255, 86, 218, 0.174);
+  bottom: -150px;
+  left: -60px;
 }
 .f2{
-
+  transform: rotate(-30deg);
+background-color: rgba(58, 163, 255, 0.34);
+bottom: 0;
+left: 200px;
 }
 .Registro{
+  overflow: hidden;
   padding: 50px 0px 50px 0px;
   background-color: rgb(255, 255, 255);
   top: 30px;
   height: 340px;
-position: absolute;
+  position: absolute;
   border-radius: 0px 40px 40px 0px;
   animation: 1s 0.5s 1 forwards  linear MovImput;
 }
@@ -91,7 +104,7 @@ position: absolute;
   position: relative;
   border:0px rgb(243, 0, 247) solid;
   border-bottom:2px rgb(59, 121, 255) solid;
-  /* background-color: rgb(235, 213, 255); */
+  background-color: rgba(235, 213, 255, 0);
 }
 .login_list{
 display: flex;
@@ -108,11 +121,12 @@ display: flex;
 }
 
 .buttoIMf{
-background-color: rgb(252, 240, 255);
+background-color: rgb(251, 235, 255);
 border: 1px rgb(206, 95, 197) solid;
 color: black;
 width: 350px;
 transition: 0.5s;
+cursor: pointer;
 }
 
 .buttoIMf:hover{
@@ -121,7 +135,7 @@ transition: 0.5s;
 }
 
 .circulo{
-
+  z-index: -2;
    position: absolute;
    border-radius: 50%;
   filter: blur(25px);
@@ -163,6 +177,7 @@ animation: 20s infinite alternate linear movCirculo;
     right:300px;
     z-index: -1;
     animation: 10s infinite alternate linear movCirculo;
+    
     }
 
 @keyframes movCirculo {
