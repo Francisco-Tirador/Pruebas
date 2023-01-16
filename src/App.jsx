@@ -67,16 +67,16 @@ function App() {
 
 
                 <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/848/848043.png" alt="" />
-                  <input type="text" className=" editedImput" id='login-pass' placeholder={"NOMBRE(S)"} /></li>
+                  <input type="text" className=" editedImput" required id='login-pass' placeholder={"NOMBRE(S)"} /></li>
 
                 <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/848/848043.png" alt="" />
-                  <input type="text" className=" editedImput " placeholder='APELLIDOS' /></li>
+                  <input type="text" className=" editedImput "required placeholder='APELLIDOS' /></li>
 
                 <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/4574/4574730.png" alt="" />
-                  <input type="email" className=" editedImput " placeholder='EMEIl' /></li>
+                  <input type="email" className=" editedImput " required placeholder='EMEIl' /></li>
 
-                  <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/4574/4574730.png" alt="" />
-                  <input type="password" className=" editedImput " placeholder='PASSWORD' /></li>
+                  <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/7939/7939619.png" alt="" />
+                  <input type="password" className=" editedImput " required placeholder='PASSWORD' /></li>
 
 
                 <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/126/126509.png" alt="" />
@@ -85,14 +85,14 @@ function App() {
               </div>
               <div>
                 <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/3240/3240345.png" alt="" />
-                  <input type="text" className=" editedImput " placeholder='ESPECIALIDAD' /></li>
+                  <input type="text" className=" editedImput " required placeholder='ESPECIALIDAD' /></li>
 
                 <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/3051/3051188.png" alt="" />
-                  <input type="text" className=" editedImput " placeholder='INSTITUCION' /></li>
+                  <input type="text" className=" editedImput " required placeholder='INSTITUCION' /></li>
 
                
 
-                  <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/848/848043.png" alt="" />
+                  <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/4830/4830731.png" alt="" />
 
                     <select name="prefijotxt_s" id="prefijotxt_s" className="editedImput" onchange="cambiaPrefijo();" data-plugin-selectTwo required>
 
@@ -131,15 +131,12 @@ function App() {
                       <option>(VACIO)</option>
 
                     </select>
-
-                    <label class="error" for="prefijotxt_s"></label>
-
                   
 
                 </li>
               
 
-                <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/848/848043.png" alt="" />
+                <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/4830/4830731.png" alt="" />
                   
 
 
@@ -181,16 +178,30 @@ function App() {
                       <option>(VACIO)</option>
 
                     </select>
-
-                    <label class="error" for="prefijotxt_s"></label>
-
-
                 </li>
 
-                <li className="loginItem INfile" htmlFor="archivo">
+                
+                <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/681/681443.png" alt="" />
+
+<select name="prefijotxt_s" id="prefijotxt_s" className="editedImput" onchange="cambiaPrefijo();" data-plugin-selectTwo required>
+
+  <option value="">CATEGORIA</option>
+
+  <option value="DR." >ESTUDIANTE</option>
+  <option value="DR." >PUBLICO EN GENERAL</option>
+
+  <option>(VACIO)</option>
+
+</select>
+
+
+</li>
+
+
+                {/* <li className="loginItem INfile" htmlFor="archivo">
                   <label htmlFor="archivo">SUBIR SEDULA PROFECIONAL</label>
                   <input type="file" className='File' id='archivo' /></li>
-
+ */}
 
               </div>
 
