@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/img/apple-touch-icons.png" rel="icon">
+    <title>REGISTRO</title>
+
+    <link rel="stylesheet" type="text/css" href="../src/App.css" />
+    <link rel="stylesheet" type="text/css" href="../src/Index.css" />
+</head>
+<body>
+  <div id="root">
+<div class="App">
+      <div class='ContenRegister'>
+        <div class='Conten_campos'>
+<img src="../src//assets/posterFinal.png"alt="" />
+        </div>
+        <div class='Registro'>
+          <div class="fondo f1"></div>
+          <span class='fondo f2'></span>
+          <form >
+
+            <ul class="login_list">
+              <div class='input1'>
+
+                <li class="loginItem"><img class='icon' src="https://cdn-icons-png.flaticon.com/512/848/848043.png" alt="" />
+                  
+                    <select name="prefijotxt_s" id="prefijotxt_s" class="editedImput" onchange="cambiaPrefijo();" data-plugin-selectTwo required>
+
+                      <option value="">PREFIJO</option>
+
+                      <option value="DR." >DR.</option>
+
+                      <option value="DRA." >DRA.</option>
+
+                      <option value="ENF." >ENF.</option>
+
+                      <option value="ENF. PER.">ENF. PER.</option>
+
+                      <option value="ENF. QCA.">ENF. QCA.</option>
+
+                      <option value="L.E." >L.E.</option>
+
+                      <option value="L.E.O.">L.E.O.</option>
+
+                      <option value="E.A.S.E.">E.A.S.E.</option>
+
+                      <option value="E.A.S.SE.">E.A.S.SE.</option>
+
+                      <option value="LIC." >LIC.</option>
+
+                      <option value="L.D.">L.D.</option>
+
+                      <option value="SR.">SR.</option>
+
+                      <option value="SRA.">SRA.</option>
+
+                      <option value="TTR. RR.">LIC. NUT.</option>
+
+                      <option value="LIC. NUT.">LIC. NUT.</option>
+
+                      <option>(VACIO)</option>
+
+                    </select>
+
+                    <label class="error" for="prefijotxt_s"></label>
+
+                  
+
+                </li>
+
+
+                <li class="loginItem"><img class='icon' src="https://cdn-icons-png.flaticon.com/512/848/848043.png" alt="" />
+                  <input type="text" class=" editedImput" required id='login-pass' placeholder= "NOMBRE(S)" /></li>
+
+                <li class="loginItem"><img class='icon' src="https://cdn-icons-png.flaticon.com/512/848/848043.png" alt="" />
+                  <input type="text" class=" editedImput "required placeholder='APELLIDOS' /></li>
+
+                <li class="loginItem"><img class='icon' src="https://cdn-icons-png.flaticon.com/512/4574/4574730.png" alt="" />
+                  <input type="email" class=" editedImput " required placeholder='EMEIl' /></li>
+
+                  <li class="loginItem"><img class='icon' src="https://cdn-icons-png.flaticon.com/512/7939/7939619.png" alt="" />
+                  <input type="password" class=" editedImput " required placeholder='PASSWORD' /></li>
+
+
+                <li class="loginItem"><img class='icon' src="https://cdn-icons-png.flaticon.com/512/126/126509.png" alt="" />
+                  <input type="tel" class=" editedImput " placeholder='TELEFONO ' /></li>
+
+              </div>
+              <div>
+                <li class="loginItem"><img class='icon' src="https://cdn-icons-png.flaticon.com/512/3240/3240345.png" alt="" />
+                  <input type="text" class=" editedImput " required placeholder='ESPECIALIDAD' /></li>
+
+                <li class="loginItem"><img class='icon' src="https://cdn-icons-png.flaticon.com/512/3051/3051188.png" alt="" />
+                  <input type="text" class=" editedImput " required placeholder='INSTITUCION' /></li>
+
+               
+
+                  <li class="loginItem"><img class='icon' src="https://cdn-icons-png.flaticon.com/512/4830/4830731.png" alt="" />
+
+                    <select name="profesion" id="pais" class="editedImput" required>
+                      <OPTION VALUE="" id="pais" SELECTED DISABLED>&nbsp;&nbsp;PAIS </OPTION>
+                                        <OPTION VALUE="MÉXICO">MÉXICO</OPTION>
+                                        <OPTION VALUE="AFGANISTÁN">AFGANISTÁN</OPTION>
+                                        <OPTION VALUE="ALEMANIA">ALEMANIA</OPTION>
+                                        <OPTION VALUE="ANDORRA">ANDORRA</OPTION>
+                                        <OPTION VALUE="ANGOLA">ANGOLA</OPTION>
+                                        <OPTION VALUE="ARGENTINA">ARGENTINA</OPTION>
+                                        <OPTION VALUE="AUSTRALIA">AUSTRALIA</OPTION>
+                                        <OPTION VALUE="AUSTRIA">AUSTRIA</OPTION>
+                                        <OPTION VALUE="BOTSUANA">BOTSUANA</OPTION>
+                                        <OPTION VALUE="BRASIL">BRASIL</OPTION>
+                                        <OPTION VALUE="BULGARIA">BULGARIA</OPTION>
+                                        <OPTION VALUE="CAMBOYA">CAMBOYA</OPTION>
+                                        <OPTION VALUE="BUTÁN">BUTÁN</OPTION>
+                                        <OPTION VALUE="CANADÁ">CANADÁ</OPTION>
+                                        <OPTION VALUE="OTROS">OTROS</OPTION>
+    
+                    </select>
+
+                </li>
+              
+
+                <li class="loginItem"><img class='icon' src="https://cdn-icons-png.flaticon.com/512/4830/4830731.png" alt="" />
+
+                  <select name="prefijotxt_s" id="Estados" class="editedImput" >
+
+                    <OPTION id="Estdato " VALUE="" SELECTED DISABLED>&nbsp;&nbsp;ESTADO </OPTION>
+                                        <OPTION VALUE="ALGOLOGÍA">AGUASCALIENTES</OPTION>
+                                        <OPTION VALUE="ANESTESIOLOGÍA">BAJA CALIFORNIA</OPTION>
+                                        <OPTION VALUE="GERIATRÍA">BAJA CALIFORNIA SUR</OPTION>
+                                     
+    
+                    </select>
+                </li>
+
+                
+                <li class="loginItem"><img class='icon' src="https://cdn-icons-png.flaticon.com/512/681/681443.png" alt="" />
+
+<select name="prefijotxt_s" id="prefijotxt_s" class="editedImput" onchange="cambiaPrefijo();" data-plugin-selectTwo required>
+
+  <option value="">CATEGORIA</option>
+
+  <option value="DR." >ESTUDIANTE</option>
+  <option value="DR." >PUBLICO EN GENERAL</option>
+
+
+
+</select>
+
+
+</li>
+
+              </div>
+
+
+            </ul>
+            <div>
+            </div>
+            <button class='buttoIMf' onclick="prueba()"> REGISTRAME </button>
+          </form>
+        </div>
+        <!-- {/* <img src="https://cdn-icons-png.flaticon.com/512/7817/7817034.png" class='icono' /> */} -->
+      </div>
+
+
+
+      <span class='circulo uno'></span>
+      <div class='circulo dos'></div>
+      <span class='circulo tres'></span>
+      <div class='circulo cuatro'></div>
+
+    </div>
+  </div>
+
+
+
+</body>
+</html>

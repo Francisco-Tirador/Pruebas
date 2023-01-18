@@ -1,15 +1,21 @@
 import { useState } from 'react'
-import banner from './assets/jhl.jfif'
+// import banner from './assets/posterFinal.png'
+import banner2 from './assets/Poster1.png'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
   return (
     <div className="App">
+
+    <div className="tiutlo">
+    <h1>Registro al 8° Congreso Internacional</h1>
+    </div>
+    <div className='All'>
       <div className='ContenRegister'>
         <div className='Conten_campos'>
-          <img src="https://c4.wallpaperflare.com/wallpaper/232/461/291/billelis-dark-religion-death-skull-hd-wallpaper-preview.jpg" alt="" />
-
+        
+          <img src={banner2} alt="" />
         </div>
         <div className='Registro'>
           <div className="fondo f1"></div>
@@ -20,48 +26,48 @@ function App() {
               <div className='input1'>
 
                 <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/848/848043.png" alt="" />
-                  
-                    <select name="prefijotxt_s" id="prefijotxt_s" className="editedImput" onchange="cambiaPrefijo();" data-plugin-selectTwo required>
 
-                      <option value="">PREFIJO</option>
+                  <select name="prefijotxt_s" id="prefijotxt_s" className="editedImput" onchange="cambiaPrefijo();" data-plugin-selectTwo required>
 
-                      <option value="DR." >DR.</option>
+                    <option value="">PREFIJO</option>
 
-                      <option value="DRA." >DRA.</option>
+                    <option value="DR." >DR.</option>
 
-                      <option value="ENF." >ENF.</option>
+                    <option value="DRA." >DRA.</option>
 
-                      <option value="ENF. PER.">ENF. PER.</option>
+                    <option value="ENF." >ENF.</option>
 
-                      <option value="ENF. QCA.">ENF. QCA.</option>
+                    <option value="ENF. PER.">ENF. PER.</option>
 
-                      <option value="L.E." >L.E.</option>
+                    <option value="ENF. QCA.">ENF. QCA.</option>
 
-                      <option value="L.E.O.">L.E.O.</option>
+                    <option value="L.E." >L.E.</option>
 
-                      <option value="E.A.S.E.">E.A.S.E.</option>
+                    <option value="L.E.O.">L.E.O.</option>
 
-                      <option value="E.A.S.SE.">E.A.S.SE.</option>
+                    <option value="E.A.S.E.">E.A.S.E.</option>
 
-                      <option value="LIC." >LIC.</option>
+                    <option value="E.A.S.SE.">E.A.S.SE.</option>
 
-                      <option value="L.D.">L.D.</option>
+                    <option value="LIC." >LIC.</option>
 
-                      <option value="SR.">SR.</option>
+                    <option value="L.D.">L.D.</option>
 
-                      <option value="SRA.">SRA.</option>
+                    <option value="SR.">SR.</option>
 
-                      <option value="TTR. RR.">LIC. NUT.</option>
+                    <option value="SRA.">SRA.</option>
 
-                      <option value="LIC. NUT.">LIC. NUT.</option>
+                    <option value="TTR. RR.">LIC. NUT.</option>
 
-                      <option>(VACIO)</option>
+                    <option value="LIC. NUT.">LIC. NUT.</option>
 
-                    </select>
+                    <option>(VACIO)</option>
 
-                    <label class="error" for="prefijotxt_s"></label>
+                  </select>
 
-                  
+                  <label class="error" for="prefijotxt_s"></label>
+
+
 
                 </li>
 
@@ -70,12 +76,12 @@ function App() {
                   <input type="text" className=" editedImput" required id='login-pass' placeholder={"NOMBRE(S)"} /></li>
 
                 <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/848/848043.png" alt="" />
-                  <input type="text" className=" editedImput "required placeholder='APELLIDOS' /></li>
+                  <input type="text" className=" editedImput " required placeholder='APELLIDOS' /></li>
 
                 <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/4574/4574730.png" alt="" />
                   <input type="email" className=" editedImput " required placeholder='EMEIl' /></li>
 
-                  <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/7939/7939619.png" alt="" />
+                <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/7939/7939619.png" alt="" />
                   <input type="password" className=" editedImput " required placeholder='PASSWORD' /></li>
 
 
@@ -90,112 +96,112 @@ function App() {
                 <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/3051/3051188.png" alt="" />
                   <input type="text" className=" editedImput " required placeholder='INSTITUCION' /></li>
 
-               
 
-                  <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/4830/4830731.png" alt="" />
-
-                    <select name="prefijotxt_s" id="prefijotxt_s" className="editedImput" onchange="cambiaPrefijo();" data-plugin-selectTwo required>
-
-                      <option value="">PAIS</option>
-
-                      <option value="DR." >DR.</option>
-
-                      <option value="DRA." >DRA.</option>
-
-                      <option value="ENF." >ENF.</option>
-
-                      <option value="ENF. PER.">ENF. PER.</option>
-
-                      <option value="ENF. QCA.">ENF. QCA.</option>
-
-                      <option value="L.E." >L.E.</option>
-
-                      <option value="L.E.O.">L.E.O.</option>
-
-                      <option value="E.A.S.E.">E.A.S.E.</option>
-
-                      <option value="E.A.S.SE.">E.A.S.SE.</option>
-
-                      <option value="LIC." >LIC.</option>
-
-                      <option value="L.D.">L.D.</option>
-
-                      <option value="SR.">SR.</option>
-
-                      <option value="SRA.">SRA.</option>
-
-                      <option value="TTR. RR.">LIC. NUT.</option>
-
-                      <option value="LIC. NUT.">LIC. NUT.</option>
-
-                      <option>(VACIO)</option>
-
-                    </select>
-                  
-
-                </li>
-              
 
                 <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/4830/4830731.png" alt="" />
-                  
+
+                  <select name="prefijotxt_s" id="prefijotxt_s" className="editedImput" onchange="cambiaPrefijo();" data-plugin-selectTwo required>
+
+                    <option value="">PAIS</option>
+
+                    <option value="DR." >DR.</option>
+
+                    <option value="DRA." >DRA.</option>
+
+                    <option value="ENF." >ENF.</option>
+
+                    <option value="ENF. PER.">ENF. PER.</option>
+
+                    <option value="ENF. QCA.">ENF. QCA.</option>
+
+                    <option value="L.E." >L.E.</option>
+
+                    <option value="L.E.O.">L.E.O.</option>
+
+                    <option value="E.A.S.E.">E.A.S.E.</option>
+
+                    <option value="E.A.S.SE.">E.A.S.SE.</option>
+
+                    <option value="LIC." >LIC.</option>
+
+                    <option value="L.D.">L.D.</option>
+
+                    <option value="SR.">SR.</option>
+
+                    <option value="SRA.">SRA.</option>
+
+                    <option value="TTR. RR.">LIC. NUT.</option>
+
+                    <option value="LIC. NUT.">LIC. NUT.</option>
+
+                    <option>(VACIO)</option>
+
+                  </select>
 
 
-
-                    <select name="prefijotxt_s" id="prefijotxt_s" className="editedImput" >
-
-                      <option value="">ESTADO</option>
-
-                      <option value="DR." >DR.</option>
-
-                      <option value="DRA." >DRA.</option>
-
-                      <option value="ENF." >ENF.</option>
-
-                      <option value="ENF. PER.">ENF. PER.</option>
-
-                      <option value="ENF. QCA.">ENF. QCA.</option>
-
-                      <option value="L.E." >L.E.</option>
-
-                      <option value="L.E.O.">L.E.O.</option>
-
-                      <option value="E.A.S.E.">E.A.S.E.</option>
-
-                      <option value="E.A.S.SE.">E.A.S.SE.</option>
-
-                      <option value="LIC." >LIC.</option>
-
-                      <option value="L.D.">L.D.</option>
-
-                      <option value="SR.">SR.</option>
-
-                      <option value="SRA.">SRA.</option>
-
-                      <option value="TTR. RR.">LIC. NUT.</option>
-
-                      <option value="LIC. NUT.">LIC. NUT.</option>
-
-                      <option>(VACIO)</option>
-
-                    </select>
                 </li>
 
-                
+
+                <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/4830/4830731.png" alt="" />
+
+
+
+
+                  <select name="prefijotxt_s" id="prefijotxt_s" className="editedImput" >
+
+                    <option value="">ESTADO</option>
+
+                    <option value="DR." >DR.</option>
+
+                    <option value="DRA." >DRA.</option>
+
+                    <option value="ENF." >ENF.</option>
+
+                    <option value="ENF. PER.">ENF. PER.</option>
+
+                    <option value="ENF. QCA.">ENF. QCA.</option>
+
+                    <option value="L.E." >L.E.</option>
+
+                    <option value="L.E.O.">L.E.O.</option>
+
+                    <option value="E.A.S.E.">E.A.S.E.</option>
+
+                    <option value="E.A.S.SE.">E.A.S.SE.</option>
+
+                    <option value="LIC." >LIC.</option>
+
+                    <option value="L.D.">L.D.</option>
+
+                    <option value="SR.">SR.</option>
+
+                    <option value="SRA.">SRA.</option>
+
+                    <option value="TTR. RR.">LIC. NUT.</option>
+
+                    <option value="LIC. NUT.">LIC. NUT.</option>
+
+                    <option>(VACIO)</option>
+
+                  </select>
+                </li>
+
+
                 <li className="loginItem"><img className='icon' src="https://cdn-icons-png.flaticon.com/512/681/681443.png" alt="" />
 
-<select name="prefijotxt_s" id="prefijotxt_s" className="editedImput" onchange="cambiaPrefijo();" data-plugin-selectTwo required>
+                  <select name="prefijotxt_s" id="prefijotxt_s" className="editedImput" onchange="cambiaPrefijo();" data-plugin-selectTwo required>
 
-  <option value="">CATEGORIA</option>
+                    <option value="">CATEGORIA</option>
 
-  <option value="DR." >ESTUDIANTE</option>
-  <option value="DR." >PUBLICO EN GENERAL</option>
-
-
-
-</select>
+                    <option value="DR." >ESTUDIANTE</option>
+                    <option value="DR." >PUBLICO EN GENERAL</option>
 
 
-</li>
+
+                  </select>
+
+
+                </li>
 
 
                 {/* <li className="loginItem INfile" htmlFor="archivo">
@@ -223,7 +229,7 @@ function App() {
       <div className='circulo cuatro'></div>
 
     </div>
-
+    </div>
   )
 }
 

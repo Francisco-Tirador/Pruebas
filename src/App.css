@@ -4,12 +4,13 @@
   padding: 2rem;
   text-align: center;
 }
-
+.tiutlo{
+  text-align: center;
+font-size:x-small;
+}
 .App{
-
-  /* background-color: #888; */
-  /* height: 100vh; */
-  /* background-color: beige; */
+max-width: 450px;
+max-width: 500px;
 }
 ::placeholder{
   color: rgb(12, 12, 12);
@@ -79,6 +80,7 @@ left: 200px;
   overflow: hidden;
   padding: 50px 0px 50px 0px;
   background-color: rgb(255, 255, 255);
+  /* left: 220px; */
   top: 30px;
   height: 340px;
   position: absolute;
