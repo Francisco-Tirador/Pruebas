@@ -1,187 +1,76 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.btnMovil{
+  display: none;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-/* 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
-@media(max-width:970px){
-  .titulo{
-    transform: scale(0.8);
-  }
-  .All{
+@media (max-width:779px){
+  .Contenedor{
     transform: scale(0.8);
   }
 }
-@media(max-width:800px){
-  .All{
+@media (max-width:715px){
+  .Contenedor{
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width:715px){
+
+  .btnMovil{
+    display: initial;
+    position: absolute;
+    top: -27px;
+    left: 20px;
+    background-color: var(--3d-fondo);
+    z-index: -12;
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+  }
+
+    .regist, .login{
+        font-size: large;
+        margin-top:150px;
+        width: 350px;
+        height: 275px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+      }
+      .Contenedor{
+        width: 360px;
+        border-radius: 20px;
+        position: relative;
+        z-index: 80;
+      }
+      .camposRegistro{
+        
+        width: 340px;
+        transform: translate(0);
+        left: 9px;
+      }
+      .contenCamposRegister{
+        position: absolute;
+        
+        width: 340px;
+        height:750px;
+        left: 9px;
+      }
+      .camposlogin{
+        width: 340px;
+        margin-left: 9px;
+      }
+      
+      
+}
+@media (max-width:360px){
+  .Contenedor{
     transform: scale(0.7);
   }
 }
-@media(max-width:670px){
-  .All{
-    transform: scale(0.6);
-  }
-}
 
-@media (max-width:590px){
-  body{
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-      height: auto;
-      place-items: initial;
-  }
-  .All{
-   transform: scale(1.0);
-  }
-  .ContenRegister{
-    width: 100px;
-    display: inline;
-  }
-  .Registro{
-   
-    border-radius: 0px 40px 40px 0px;
-    animation: 1s 0.5s 1 forwards  linear MovImput;
-  }
-  @keyframes MovImput {
-    100%{transform: translateY(220px) scale(0.9);}
-    
-  }
-  .tiutlo{
-  
-    width: 300px;
-    text-align: center;
-    font-weight: 2px;
-  font-size:xx-small;
-  }
-  .Conten_campos img{
-    width: 300px;
-    height: 250px;
-  }
-  .login_list{
-    display: initial;
-    }
-    .editedImput{
-      width: 240px;
-      text-align: center;
-      margin: 10px ;
-      height: 15px;
-      position: relative;
-      background-color: rgba(235, 213, 255, 0);
-      font-weight: 700;
-    }
-    .Registro{
-      overflow-y:scroll ;
-      transform: scale(0.8);
-      padding: 5px;
-      background-color: rgb(255, 255, 255);
-      top: 0px;
-      height: 400px;
-      position: absolute;
-      border-radius: 0px 0px 40px 40px;
-      animation: 1s 0.5s 1 forwards  linear MovImput;
-    }
-    .icon{
-      position: initial;
-    }
-    .INfile{
-      width: 100%;
-      margin-left: 0;
-    }
-    .buttoIMf{
-      width: 60%;
-      text-align: center;
-    }
-    .f2{
-      height: 100px;
-      width: 100px;
-      bottom: 10px;
-      right: 6px;
-    }
-  .f1{
-    height: 100px;
-    width: 100px;
-    bottom: -10px;
-    left: -6px;
-  }
-  @media(max-width:350px){
-    body{
-      height: 200vh;
-      background-color: #1a1a1a;
-    }
-    .All{
-      transform: scale(0.8);
-    }
-    #root {
-      max-width: 1280px;
-      margin: 0;
-      padding: 0%;
-      text-align: center;
-  }
-  }
-  }
+
+
+
+
