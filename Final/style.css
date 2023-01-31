@@ -44,3 +44,17 @@ h1 {
     transform:translateX(25%);
   }
 }
+
+
+.menuNav{
+  position: fixed;
+  width: 100%;
+  /* background-color:#040404 ; */
+}
+.menuNav li{
+  border-radius: 30px;
+  padding: 5px;
+  margin: 20px;
+  display: inline-block;
+  background-color: aquamarine;
+}
