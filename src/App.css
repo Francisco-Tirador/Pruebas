@@ -26,19 +26,7 @@ font-weight: 400;
 
 color-scheme: light dark;
 color: rgba(255, 255, 255, 0.87);
-/* color 
---Fondo-color:#03e079;
---2d-Fondo:#040404;
---3d-fondo: rgb(79, 79, 79);
---fondos-componentes:#404040;
 
-
-
---Fondo-color:#110e30;
---2d-Fondo:#040404;
---3d-fondo: #39acc2;
---fondos-componentes:#ffffff;
-*/
 --Fondo-color:#03e079;
 --2d-Fondo:#040404;
 --3d-fondo: rgb(79, 79, 79);
@@ -323,18 +311,19 @@ right: 0;
 }
 
 
-
 /* //////asdasdads         ////////////////////////////////////------ s   asd  */
 
 
 .Contenedor3{
+  perspective: 2px;
+  box-shadow: 10px 10px 30px black;
   background-color: #ffffff;
-  width: 600px;
-  height: 450px;
-  margin-top: 100px;
+  /* background: linear-gradient(90deg, rgba(75,64,251,1) 0%, rgba(169,220,255,1) 47%, rgba(0,212,255,1) 86%); */
+  width: 500px;
+  height: 350px;
   display: flex;
   justify-content: center;
-
+  justify-items: center;
 }
 .Login{
   width: 100%;
@@ -351,13 +340,33 @@ right: 0;
   position: relative;
 }
 .contenedor_campos_input form{
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .inputM3{
   width: 70%;
   height: 25px;
   margin-bottom:20px ;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  border: 1px solid black;
+  color: #000;
 }
+
+.inputM3::placeholder{
+color: #000;
+}
+.inputM3:focus::placeholder{
+color: rgb(8, 123, 255);
+}
+.inputM3:focus{
+  border: 1px solid rgb(8, 123, 255) ;
+}
+
+.inputM3:valid{
+  color:  rgb(8, 123, 255);
+}
+
 
 .contenedor_campos_input li{
   position: relative;
@@ -372,16 +381,12 @@ right: 0;
   /* position: absolute; */
 }
 .pal {
-  background-color: transparent;
+  /* background-color: transparent; */
   position: absolute;
   left:100px ;
   
 }
 
-form input:required {
-  background-color: #03e079;
-  /* otras propiedades */
- }
 li:focus-within .pal{
   background-color: rgb(255, 16, 16);
   color: #000;
@@ -389,31 +394,30 @@ li:focus-within .pal{
   font-weight: 800;
 }
 
-:is(label){
-  display: none;
-}
 
-.pal:focus-within{
-  background-color: rgb(255, 208, 0);
 
-}
  
 .contenedor_campos_input input{
 top: -12px;
-
 }
 
 
-
+.image3{
+  display: inline-block;
+}
 
 .image3 img{
-  width: 460px;
-  height: 600px;
-  
+  width: 360px;
+  height: 500px;
 }
 .A1{
   display: flex;
   margin-top: 5%;
+  background-color: #03e079;
+  height: 100%;
+  flex-wrap:wrap;
+  justify-content: center;
+  justify-items: flex-end;
 }
 
 .PALABRA{
@@ -432,4 +436,23 @@ top: -12px;
   color: #040404;
   margin-top: 10%;
 }
+.hr{
+  width: 50%;
+}
 
+.texto1{
+  color: rgb(20, 102, 255);
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.pald{
+background-color:  rgb(20, 102, 255);
+color: rgb(255, 255, 255);
+border: 0;
+box-shadow: 0px 10px 30px black;
+width: 150px;
+height: 30px;
+border-radius: 10px;
+cursor: pointer;
+}
