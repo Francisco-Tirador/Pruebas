@@ -4,6 +4,7 @@ body{
   background-color: #258b77;
   color: white;
   overflow: hidden;
+  background-image: url(https://curso-ameh.com/assets/images/imagen-fondo.jpg);
 }
 
 ul{
@@ -30,7 +31,17 @@ color: rgba(255, 255, 255, 0.87);
 --Fondo-color:#03e079;
 --2d-Fondo:#040404;
 --3d-fondo: rgb(79, 79, 79);
---fondos-componentes:#404040;
+--fondos-componentes:#03e079;
+
+/* --Fondo-color:white;
+--2d-Fondo:rgb(20, 102, 255);
+--3d-fondo: rgb(79, 79, 79);
+--fondos-componentes:rgb(20, 102, 255); */
+
+/* --Fondo-color:#151235;
+--2d-Fondo:rgb(20, 102, 255);
+--3d-fondo: #74337f;
+--fondos-componentes:#39acc2; */
 
 }
 
@@ -40,7 +51,7 @@ color: rgba(255, 255, 255, 0.87);
   justify-content: center;
   text-align: center;
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 
 }
 
@@ -259,7 +270,7 @@ animation: 1s forwards linear alternate targetPrincil;
 @keyframes targetPrincil {
   0%{transform: scale(1);}
   50%{transform: translateX(-200px);}
-  100%{transform: translateX(-100px) scale(0.8);z-index: 50; background-color: var(--fondos-componentes);}
+  100%{transform: translateX(-100px) scale(0.8);z-index: 50; background-color: var(--Fondo-color);}
 }
 
 .ContenRegister{
@@ -280,7 +291,7 @@ right: 0;
 
 .campos2{
   /* background-color: #03d9e0; */
-  background-color:#03e079 ;
+  background-color:var(--fondos-componentes) ;
 
   height: 300px;
   padding: 25px;
@@ -295,7 +306,7 @@ right: 0;
 
 }
 .campos2 input:focus{
-  background-color:#03e079 ;
+  background-color:var(--Fondo-color) ;
   border-style: double;
   color: black;
 }
@@ -307,23 +318,40 @@ right: 0;
 @keyframes targetPrincilR {
   0%{transform: scale(1);}
   50%{transform: translateX(200px);}
-  100%{transform: translateX(100px) scale(0.8);z-index: 50;background-color: var(--fondos-componentes);}
+  100%{transform: translateX(100px) scale(0.8);z-index: 50;background-color: var(--Fondo-color);}
 }
 
 
 /* //////asdasdads         ////////////////////////////////////------ s   asd  */
-
-
-.Contenedor3{
+.ContenedorR3{
+  overflow: hidden;
   perspective: 2px;
   box-shadow: 10px 10px 30px black;
-  background-color: #ffffff;
+  background-color:var(--Fondo-color);
+  /* background: linear-gradient(90deg, rgba(75,64,251,1) 0%, rgba(169,220,255,1) 47%, rgba(0,212,255,1) 86%); */
+  width: 500px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: rgba(255, 255, 255, 0.058);
+  /* transform: scale(1.5); */
+}
+
+.Contenedor3{
+  overflow: hidden;
+  perspective: 2px;
+  box-shadow: 10px 10px 30px black;
+  background-color:var(--Fondo-color);
   /* background: linear-gradient(90deg, rgba(75,64,251,1) 0%, rgba(169,220,255,1) 47%, rgba(0,212,255,1) 86%); */
   width: 500px;
   height: 350px;
   display: flex;
   justify-content: center;
   justify-items: center;
+  background-color: rgba(255, 255, 255, 0.477);
+  transform: scale(1.5);
+  backface-visibility: 0%;
 }
 .Login{
   width: 100%;
@@ -332,12 +360,14 @@ right: 0;
 }
 
 .contenedor_campos_input{
+
   margin-top: 22px ;
   /* background-color: #03e079; */
   width: 90%;
   height: 90%;
   border: 2px solid rgb(3, 3, 3);
   position: relative;
+  /* overflow: hidden; */
 }
 .contenedor_campos_input form{
   margin-top: 5%;
@@ -349,22 +379,34 @@ right: 0;
   background-color: transparent;
   border: 0;
   outline: none;
-  border: 1px solid black;
+  border: 2px solid var(--3d-fondo);
   color: #000;
+  opacity: 0%;
+  animation: 2s 2s  forwards alternate inicioInputs;
+  /* border: 0; */
+  /* border-bottom: 2px solid black; */
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+
+@keyframes inicioInputs {
+  100%{opacity: 100%;}
 }
 
 .inputM3::placeholder{
-color: #000;
+color: var(--3d-fondo);
+margin-left: 20px;
 }
 .inputM3:focus::placeholder{
-color: rgb(8, 123, 255);
+color: var(--fondos-componentes);
 }
 .inputM3:focus{
   border: 1px solid rgb(8, 123, 255) ;
 }
 
 .inputM3:valid{
-  color:  rgb(8, 123, 255);
+  color: var(--fondos-componentes);
 }
 
 
@@ -372,8 +414,6 @@ color: rgb(8, 123, 255);
   position: relative;
   transition: 10s;
 }
-
-
 
 
 .pal{
@@ -412,28 +452,26 @@ top: -12px;
 }
 .A1{
   display: flex;
-  margin-top: 5%;
-  background-color: #03e079;
   height: 100%;
   flex-wrap:wrap;
   justify-content: center;
-  justify-items: flex-end;
+  align-items: center;
 }
 
 .PALABRA{
-  background-color:white;
+  background-color:var(--Fondo-color);
   padding: 25px;
   padding-top: 0px;
   padding-bottom: 0px;
   text-align: center;
   position: absolute;
   top: -30px;
-  color: rgb(0, 0, 0);
+  color: var(--3d-fondo);
   right: 41%;
   font-weight: 500;
 }
 .Bienvenida{
-  color: #040404;
+  color: var(--3d-fondo);
   margin-top: 10%;
 }
 .hr{
@@ -441,13 +479,13 @@ top: -12px;
 }
 
 .texto1{
-  color: rgb(20, 102, 255);
+  color:var(--fondos-componentes);
   font-weight: 700;
   font-size: x-large;
 }
 
 .pald{
-background-color:  rgb(20, 102, 255);
+background-color: var(--fondos-componentes);
 color: rgb(255, 255, 255);
 border: 0;
 box-shadow: 0px 10px 30px black;
@@ -455,4 +493,134 @@ width: 150px;
 height: 30px;
 border-radius: 10px;
 cursor: pointer;
+transform: scale(0.0) ;
+animation: 1s forwards inicioBtn ;
+}
+@keyframes inicioBtn {
+  100%{transform: scale(1.0);}
+}
+
+.FondoInputs{
+  opacity: 60%;
+  background-color:var(--fondos-componentes);
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  transform: rotate(30deg);
+}
+.f1{
+  bottom: -125px;
+  left: -85px;
+}
+.f2{
+  top: -55px;
+  right: -55px;
+}
+.f3{
+  overflow: hidden;
+  position: absolute;
+background-color:var(--fondos-componentes);
+width: 0px;
+height: 30px;
+right: 0;
+padding-left: 10px;
+cursor: pointer;
+display: flex;
+flex-wrap: nowrap;
+animation: 2s 1s forwards registro;
+box-shadow: 10px 10px 30px black;
+}
+
+@keyframes registro {
+  100%{width: 160px;}
+}
+
+/* askdjalksdjlasssssssssskddme            menu 4  */
+
+.A4{
+  /* display: flex; */
+  height: 100%;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(0.1); */
+  transform: rotate(50deg);
+  animation: 3s 0.5s  forwards linear alternate animationInitialGafete ;
+  position: absolute;
+  top:-600px ;
+  transform: scale(10.0);
+  /* background-color: ; */
+}
+
+@keyframes animationInitialGafete {
+33.3%{transform: rotate(-30deg);top:-45px;}
+66.3%{transform: rotate(30deg);}
+82%{transform: rotate(10deg);}
+100%{transform: rotate(0deg);top:-45px;}
+
+}
+.Contenedor4{
+  overflow: hidden;
+  perspective: 2px;
+  box-shadow: 10px 10px 30px black;
+  background-color:var(--Fondo-color);
+  /* background: linear-gradient(90deg, rgba(75,64,251,1) 0%, rgba(169,220,255,1) 47%, rgba(0,212,255,1) 86%); */
+  width: 300px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: rgb(255, 255, 255);
+  /* transform: scale(1.5); */
+  backface-visibility: 0%;
+}
+.Bienvenida4{
+  color: var(--3d-fondo);
+  margin-top: 0%;
+}
+.Bienvenida4 p{
+  margin-top: 0;
+}
+.su{
+  margin-top: 25%;
+}
+.contenLazo{
+  /* background-color: #03e079; */
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.lazo{
+  width: 50px;
+  height: 150px;
+  background-color: var(--3d-fondo);
+}
+.l1{
+  position: absolute;
+  height: 265px;
+  top: -95px;
+  z-index: 100;
+  border-radius:20px ;
+  transform: rotate(-15deg);
+  margin-right: 55px;
+}
+.l2{
+  transform: rotate(45deg);
+  margin-left: 125px;
+}
+.hoyo{
+  position: absolute;
+  width: 75px;
+  height: 13px;
+  border-radius: 20px;
+  background-color: transparent;
+  top: 4px;
+  border: 2px solid black;
+}
+
+.imnPerfil{
+  width: 100px;
+  margin-top: 45px;
+  /* position: absolute; */
+  
 }

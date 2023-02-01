@@ -25,30 +25,32 @@ const Menu2 = () => {
     <div className={`ContenRegister campos2 ${count?"AnimationRegister":""}`}>
 
     <form action="" className={count?"opcidadForm":""}>
-      <ul>
-        <li>
-          <label>Name</label>
-          <input type="email" />
-        </li>
+    <ul>
+              <li>
+                {/* <label className='pal'>E-mail</label> */}
+                <input   type="text" required className='inputM3' placeholder='Nombre'  />
 
-        <li>
-          <label>Last Name</label>
-          <input type="email" />
-        </li>
-        
-        <li>
-          <label>E-mail</label>
-          <input type="email" />
-        </li>
-        
-        <li>
-          <label>password</label>
-          <input type="email" />
-        </li>
-        </ul>
+              </li>
+              <li>
+                {/* <label className='pal'>E-mail</label> */}
+                <input   type="text" required className='inputM3' placeholder='Apellido'  />
+
+              </li>
+              <li>
+                {/* <label className='pal'>E-mail</label> */}
+                <input   type="email" required className='inputM3' placeholder='E-mail'  />
+
+              </li>
+
+              <li>
+                {/* <label className='pal'>Password</label> */}
+                <input type="password" className='inputM3' placeholder='Password'/>
+              </li>
+            </ul>
       </form>
     </div>
   </div>
+  
   )
 }
 

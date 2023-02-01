@@ -8,15 +8,16 @@ body {
 
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, rgba(39, 122, 255, 0.599) 50%, rgb(55, 129, 248) 50%);
+  background-image: linear-gradient(-60deg, #39acc2 50%, rgb(55, 129, 248) 50%);
   /* background-image: linear-gradient(-60deg, rgb(19, 110, 33) 50%, rgb(32, 172, 53) 50%); */
   bottom:0;
   left:-50%;
-  opacity:.5;
+  opacity:0%;
   position:fixed;
   right:-50%;
   top:0;
   z-index:-1;
+
 }
 
 .bg2 {
