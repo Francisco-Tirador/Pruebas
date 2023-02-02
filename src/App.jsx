@@ -1,6 +1,6 @@
 import { useState } from 'react'
 // import banner from './assets/posterFinal.png'
-import banner2 from './assets/Poster1.png'
+import banner2 from './assets/flag-alt.png'
 import './App.css'
 
 
@@ -23,99 +23,73 @@ function App() {
   }
 
   return (
-    
-    <div className='A4'>
-      <div className='contenLazo'>
-      <div className='lazo l1'></div>
- <div className='lazo l2'></div>
-      </div>
- 
-    {/* <div className='image3'> */}
-      {/* <img src="https://socmexcirped.org/img2023/TEMPORAL2023.png" alt="" /> */}
-      {/* <img src="https://jc-innovation.com/mexctrims/assets/images/Temporal.png" alt="" />
-    </div> */}
-  {
-    !count? 
-    <div className='Contenedor4'>
-    {/* <div className='FondoInputs f2'></div> */}
-    <div className='hoyo'></div>
-      <div className="contenedor_campos_input">
-    <div className='FondoInputs f1'></div>
-
-    <div className='f3' onClick={change}>¿Ya tienes cuenta?</div>
-
-        {/* <p className='PALABRA'>SIGNIN</p> */}
-        <div className='Bienvenida su'>
-          <p className='texto1'>Registro super usuario</p>
-          <hr  className='hr'/>
-          {/* <p>Inicie sesión.</p> */}
+    <div className='A5'>
+      {
+        count?<div className='ContenM5'>
+        <div className='preguntasM5' onClick={change}>¿Aún no te registras?</div>
+        
+        <div className='Bienvenida5'>
+        <p className='texto5'>Bienvenido</p>
+        <p>Inicie sesión.</p>
         </div>
-        <form action="">
+     <div className='ContenInputsM5'>
+       <form action="">
+            <ul>
+            <li className='liM5'>
+                <label htmlFor="" className='laM5'>Ingresa tu correro</label>
+                <img className='IconInput' src="https://cdn-icons-png.flaticon.com/512/3494/3494619.png" alt="" />
+                <input className='inputM5' type="text" placeholder='ejemplo@ejemplo.com' />
+              </li>
+              <li className='liM5'>
+              <label htmlFor="" className='laM5'>Ingresa tu contraseña</label>
+               <img  className='IconInput' src="https://cdn-icons-png.flaticon.com/512/4520/4520142.png" alt="" />
+                <input className='inputM5' type="text" placeholder='Password' />
+              </li>
+            </ul>
+            <button className='pald btn5'>Iniciar sesión</button>
+          </form>
+     </div>
+         
+      </div>:
+      <div className='ContenM5'>
+      <div className='preguntasM5' onClick={change}>¿Ya tienes cuenta?</div>
+      
+      <div className='Bienvenida5'>
+      <p className='texto5'>Bienvenido</p>
+      <p>Inicie sesión.</p>
+      </div>
+   <div className='ContenInputsM5'>
+     <form action="">
           <ul>
-            <li>
-              {/* <label className='pal'>E-mail</label> */}
-              <input   type="text" required className='inputM3' placeholder='Nombre'  />
-
+          <li className='liM5'>
+              <label htmlFor="" className='laM5'>Ingresa tu correro</label>
+              <img className='IconInput' src="https://cdn-icons-png.flaticon.com/512/3494/3494619.png" alt="" />
+              <input className='inputM5' type="text" placeholder='ejemplo@ejemplo.com' />
             </li>
-            <li>
-              {/* <label className='pal'>E-mail</label> */}
-              <input   type="text" required className='inputM3' placeholder='Apellido'  />
-
+            <li className='liM5'>
+            <label htmlFor="" className='laM5'>Ingresa tu contraseña</label>
+             <img  className='IconInput' src="https://cdn-icons-png.flaticon.com/512/4520/4520142.png" alt="" />
+              <input className='inputM5' type="text" placeholder='Password' />
             </li>
-            <li>
-              {/* <label className='pal'>E-mail</label> */}
-              <input   type="email" required className='inputM3' placeholder='E-mail'  />
-
+            <li className='liM5'>
+            <label htmlFor="" className='laM5'>Ingresa tu contraseña</label>
+             <img  className='IconInput' src="https://cdn-icons-png.flaticon.com/512/4520/4520142.png" alt="" />
+              <input className='inputM5' type="text" placeholder='Password' />
             </li>
-
-            <li>
-              {/* <label className='pal'>Password</label> */}
-              <input type="password" className='inputM3' placeholder='Password'/>
+            <li className='liM5'>
+            <label htmlFor="" className='laM5'>Ingresa tu contraseña</label>
+             <img  className='IconInput' src="https://cdn-icons-png.flaticon.com/512/4520/4520142.png" alt="" />
+              <input className='inputM5' type="text" placeholder='Password' />
             </li>
           </ul>
-          <button className='pald'>Registrarme</button>
+          <button className='pald btn5'>Iniciar sesión</button>
         </form>
-      </div>
-    </div>:
-     <div className='Contenedor4'>
-       <div class="bg"></div>
-    <div class="bg bg2"></div>
-    <div class="bg bg3"></div>
-    <div class="content"></div>
-    {/* <div className='FondoInputs f2'></div> */}
-    <div className='hoyo'></div>
-      <div className="contenedor_campos_input">
-    <div className='FondoInputs f1'></div>
-
-    <div className='f3' onClick={change}>¿Aún no te registras?</div>
-
-        {/* <p className='PALABRA'>SIGNIN</p> */}
-        <img  className='imnPerfil' src="https://cdn-icons-png.flaticon.com/512/4871/4871351.png" alt="" />
-        <div className='Bienvenida4'>
-          <p className='texto1'>Bienvenido</p>
-          <hr  className='hr'/>
-          <p>Inicie sesión.</p>
-        </div>
-        <form action="">
-          <ul>
-            <li>
-              {/* <label className='pal'>E-mail</label> */}
-              <input   type="email" required className='inputM3' placeholder='E-mail'  />
-
-            </li>
-
-            <li>
-              {/* <label className='pal'>Password</label> */}
-              <input type="password" className='inputM3' placeholder='Password'/>
-            </li>
-          </ul>
-          <button className='pald'>Iniciar sesión</button>
-        </form>
-      </div>
+   </div>
+       
     </div>
 
-  }
-  </div>
+      }
+    </div>
   )
 }
 
