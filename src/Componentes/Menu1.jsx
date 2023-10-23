@@ -1,6 +1,24 @@
 import React from 'react'
+import { useState } from 'react'
+// import banner from './assets/posterFinal.png'
+
 
 const Menu1 = () => {
+
+  const [count, setCount] = useState(true)
+
+  const change = () => {
+    if (count === true) {
+      setCount(false)
+    } else {
+      setCount(true)
+    }
+    console.log(count)
+  }
+
+  const AlertRegistro = () => {
+    alert("Usuario registrado con exito")
+  }
   return (
     <div className="Contenedor">
 

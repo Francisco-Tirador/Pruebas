@@ -1,6 +1,21 @@
-import React from 'react'
+import { useState } from 'react'
 
 const Menu2 = () => {
+  const [count, setCount] = useState(true)
+
+  const change = () => {
+    if (count === true) {
+      setCount(false)
+    } else {
+      setCount(true)
+    }
+    console.log(count)
+  }
+
+  const AlertRegistro = () => {
+    alert("Usuario registrado con exito")
+  }
+
   return (
     <div className='container'>
     <div className='OpcionesP'><div className='Rig' onClick={change}>Login</div><div className='Lef' onClick={change}>Sign up</div><div className={`carga ${count?"positionLef":""}`}></div></div>

@@ -1,6 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Menu4 = () => {
+  const [count, setCount] = useState(true)
+
+  const change = () => {
+    if (count === true) {
+      setCount(false)
+    } else {
+      setCount(true)
+    }
+    console.log(count)
+  }
+
+  const AlertRegistro = () => {
+    alert("Usuario registrado con exito")
+  }
   return (
     <div className='A4'>
     <div className='contenLazo'>

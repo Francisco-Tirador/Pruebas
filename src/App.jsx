@@ -2,103 +2,49 @@ import { useState } from 'react'
 // import banner from './assets/posterFinal.png'
 import banner2 from './assets/flag-alt.png'
 import './App.css'
+import Menu1 from './Componentes/Menu1'
+import Menu2 from './Componentes/Menu2'
+import Menu3 from './Componentes/Menu3'
+import Menu4 from './Componentes/Menu4'
+import Menu5 from './Componentes/Menu5'
 
 
 
 
 function App() {
-  const [count, setCount] = useState(true)
+  const [MenuActivo, setMenu] = useState(1)
 
-  const change = () => {
-    if (count === true) {
-      setCount(false)
-    } else {
-      setCount(true)
-    }
-    console.log(count)
-  }
+ 
 
-  const AlertRegistro = () => {
-    alert("Usuario registrado con exito")
-  }
-
+const menus=[
+  {menu:<Menu1/>,id:1},
+  {menu:<Menu2/>,id:2},
+  {menu:<Menu3/>,id:3},
+  {menu:<Menu4/>,id:4},
+  {menu:<Menu5/>,id:5}
+]
+const activarMenu=(id)=>{
+  setMenu(menus.findIndex(m=>m.id==id))
+  console.log(MenuActivo)
+  console.log(id)
+}
   return (
-    <div className='A5'>
-      {
-        count?<div className='ContenM5'>
-        <div className='preguntasM5' onClick={change}>¿Aún no te registras?</div>
-        
-        <div className='Bienvenida5'>
-        <p className='texto5'>Bienvenido</p>
-        <p>Inicie sesión.</p>
-        </div>
-     <div className='ContenInputsM5'>
-       <form action="">
-            <ul>
-            <li className='liM5'>
-                <label htmlFor="" className='laM5'>Ingresa tu correro</label>
-                <img className='IconInput' src="https://cdn-icons-png.flaticon.com/512/3494/3494619.png" alt="" />
-                <input className='inputM5' type="text" placeholder='ejemplo@ejemplo.com' />
-              </li>
-              <li className='liM5'>
-              <label htmlFor="" className='laM5'>Ingresa tu contraseña</label>
-               <img  className='IconInput' src="https://cdn-icons-png.flaticon.com/512/4520/4520142.png" alt="" />
-                <input className='inputM5' type="text" placeholder='Password' />
-              </li>
-            </ul>
-            <button className='pald btn5'>Iniciar sesión</button>
-          </form>
-     </div>
-         
-      </div>:
-      <div className='ContenM5'>
-      <div className='preguntasM5' onClick={change}>¿Ya tienes cuenta?</div>
-      
-      <div className='Bienvenida5'>
-      <p className='texto5'>Bienvenido</p>
-      <p>Inicie sesión.</p>
-      </div>
-   <div className='ContenInputsM5'>
-     <form action="">
-          <ul>
-          <li className='liM5'>
-              <label htmlFor="" className='laM5'>Ingresa tu correro</label>
-              <img className='IconInput' src="https://cdn-icons-png.flaticon.com/512/3494/3494619.png" alt="" />
-              <input className='inputM5' type="text" placeholder='ejemplo@ejemplo.com' />
-            </li>
-            <li className='liM5'>
-            <label htmlFor="" className='laM5'>Ingresa tu contraseña</label>
-             <img  className='IconInput' src="https://cdn-icons-png.flaticon.com/512/4520/4520142.png" alt="" />
-              <input className='inputM5' type="text" placeholder='Password' />
-            </li>
-            <li className='liM5'>
-            <label htmlFor="" className='laM5'>Ingresa tu contraseña</label>
-             <img  className='IconInput' src="https://cdn-icons-png.flaticon.com/512/4520/4520142.png" alt="" />
-              <input className='inputM5' type="text" placeholder='Password' />
-            </li>
-            <li className='liM5'>
-            <label htmlFor="" className='laM5'>Ingresa tu contraseña</label>
-             <img  className='IconInput' src="https://cdn-icons-png.flaticon.com/512/4520/4520142.png" alt="" />
-              <input className='inputM5' type="text" placeholder='Password' />
-            </li>
-          </ul>
-          <button className='pald btn5'>Iniciar sesión</button>
-        </form>
-   </div>
-
    
-       
-    </div>
-
-      }
-    </div>
-
-
-
-
-
-
-
+  <>
+   <div className='Nav'>
+   <ul >
+    {
+      menus.map(menu=>(
+        <li key={menu.id} onClick={()=>activarMenu(menu.id)}>Menu {menu.id}</li>
+      ))
+    }
+    </ul>
+   </div>
+    {
+      menus[MenuActivo].menu
+    }
+    {/* <Menu1/> */}
+  </>
 
   )
 }

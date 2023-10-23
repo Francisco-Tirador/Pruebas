@@ -1,11 +1,12 @@
 body {
   /* background-color: rgb(79, 79, 79); */
-  /* background-color: white; */
+  background-color: white;
   /* background-color: #258b77; */
   color: white;
   overflow: hidden;
   background-image: url(https://curso-ameh.com/assets/images/imagen-fondo.jpg);
   /* background-color: #000; */
+  height: 100vh;
 }
 
 ul {
@@ -28,7 +29,7 @@ button {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
+  height: 100vh;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
 
@@ -62,7 +63,8 @@ button {
 
 
 .Contenedor {
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  margin:  auto;
   background-color: var(--Fondo-color);
   width: 700px;
   height: 550px;
@@ -81,6 +83,7 @@ button {
   height: 275px;
   display: inline-block;
   position: absolute;
+  background-color: #03e079;
 }
 
 .regist {
@@ -852,4 +855,15 @@ position: relative;
   100%{
     height: 100px;
   }
+}
+.Nav {
+color: #000;
+position: fixed;
+top: 0;
+left: 0;
+display: flex;
+}
+.Nav li{
+  background-color: #03e079;
+  cursor: pointer;
 }
