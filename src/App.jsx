@@ -12,39 +12,39 @@ import Menu5 from './Componentes/Menu5'
 
 
 function App() {
-  const [MenuActivo, setMenu] = useState(1)
+  const [MenuActivo, setMenu] = useState(0)
 
- 
-
-const menus=[
-  {menu:<Menu1/>,id:1},
-  {menu:<Menu2/>,id:2},
-  {menu:<Menu3/>,id:3},
-  {menu:<Menu4/>,id:4},
-  {menu:<Menu5/>,id:5}
-]
-const activarMenu=(id)=>{
-  setMenu(menus.findIndex(m=>m.id==id))
-  console.log(MenuActivo)
-  console.log(id)
-}
+  const menus = [
+    { menu: <Menu1 />, id: 1 },
+    { menu: <Menu2 />, id: 2 },
+    { menu: <Menu3 />, id: 3 },
+    { menu: <Menu4 />, id: 4 },
+    { menu: <Menu5 />, id: 5 }
+  ]
+  const activarMenu = (id) => {
+    setMenu(menus.findIndex(m => m.id == id))
+  }
   return (
-   
-  <>
-   <div className='Nav'>
-   <ul >
-    {
-      menus.map(menu=>(
-        <li key={menu.id} onClick={()=>activarMenu(menu.id)}>Menu {menu.id}</li>
-      ))
-    }
-    </ul>
-   </div>
-    {
-      menus[MenuActivo].menu
-    }
-    {/* <Menu1/> */}
-  </>
+
+    <>
+      <div className='Nav'>
+        <ul >
+          {
+            menus.map(menu => (
+              <li
+               key={menu.id}
+               className={menu.id - 1 == MenuActivo && "active"} 
+               onClick={() => activarMenu(menu.id)}>Menu {menu.id}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      {
+        menus[MenuActivo].menu
+      }
+
+    </>
 
   )
 }

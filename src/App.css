@@ -861,9 +861,23 @@ color: #000;
 position: fixed;
 top: 0;
 left: 0;
-display: flex;
+z-index: 500;
+background-color: #00000061;
+
+}
+.Nav ul{
+  margin: 10px;
+  display: flex;
 }
 .Nav li{
-  background-color: #03e079;
+  border-radius: 10px;
+  margin: 0 5px;
+  background-color: #2b6bff;
+  color: #fff;
   cursor: pointer;
+  padding: 5px 10px;
+}
+.active{
+  color: #fff;
+  background-color: rgb(18, 193, 50) !important;
 }
